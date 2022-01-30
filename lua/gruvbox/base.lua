@@ -25,10 +25,10 @@ local orange = colors.bright_orange
 local gray = colors.gray
 
 local none = 'none'
-local diff_add = "#686a16"
-local diff_change = "#406732"
-local diff_delete = "#7d0f03"
-local diff_text = "#7c5803"
+local diff_add = "#383924"
+local diff_change = "#2e372a"
+local diff_delete = "#3e1f1e"
+local diff_text = "#3d341f"
 
 local bg = vim.o.background
 if bg == nil then
