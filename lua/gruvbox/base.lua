@@ -24,6 +24,8 @@ local aqua = colors.bright_aqua
 local orange = colors.bright_orange
 local gray = colors.gray
 
+local none = 'NONE'
+
 local bg = vim.o.background
 if bg == nil then
   bg = "dark"
@@ -179,10 +181,10 @@ local base_group = {
   CursorLine = { bg = cursor_line },
   CursorColumn = "CursorLine",
   Directory = "GruvboxGreenBold",
-  DiffAdd = { fg = green, bg = bg0 },
-  DiffChange = { fg = aqua, bg = bg0 },
-  DiffDelete = { fg = red, bg = bg0 },
-  DiffText = { fg = yellow, bg = bg0 },
+  DiffAdd = { fg = green, bg = none },
+  DiffChange = { fg = aqua, bg = none },
+  DiffDelete = { fg = red, bg = none },
+  DiffText = { fg = yellow, bg = none },
   ErrorMsg = { fg = bg0, bg = red, gui = styles.bold },
   VertSplit = { fg = bg3, bg = vert_split },
   Folded = { fg = gray, bg = bg1, gui = styles.italic },
